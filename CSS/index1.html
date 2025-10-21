@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Picnic Planner</title>
+  <style>
+    #picnicApp {
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+      background-color: #f9fff9;
+    }
+    #picnicApp h2 {
+      text-align: center;
+      color: #4CAF50;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #summary {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #eaffea;
+      border-left: 5px solid #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="picnicApp">
+    <h2>Plan Your Picnic</h2>
+
+    <label for="date">Select a Date:</label>
+    <input type="date" id="date">
+
+    <label for="location">Choose Location:</label>
+    <select id="location">
+      <option value="">-- Select --</option>
+      <option value="Park">City Park</option>
+      <option value="Beach">Beach</option>
+      <option value="Forest">Forest</option>
+      <option value="Backyard">Backyard</option>
+    </select>
+
+    <label for="items">Items to Bring:</label>
+    <textarea id="items" placeholder="e.g. sandwiches, drinks, games..."></textarea>
+
+    <label for="friends">Friends to Invite:</label>
+    <input type="text" id="friends" placeholder="e.g. Alice, Bob, Charlie">
+
+    <button onclick="planPicnic()">Plan Picnic</button>
+
+    <div id="summary"></div>
+  </div>
+
+  <script>
+    function planPicnic() {
+      const date = document.getElementById('date').value;
+      const location = document.getElementById('location').value;
+      const items = document.getElementById('items').value.trim();
+      const friends = document.getElementById('friends').value.trim();
+
+      if (!date || !location || !items || !friends) {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      const summary = `
+        <h3>Your Picnic Plan:</h3>
+        <p><strong>Date:</strong> ${date}</p>
+        <p><strong>Location:</strong> ${location}</p>
+        <p><strong>Items to Bring:</strong> ${items}</p>
+        <p><strong>Friends:</strong> ${friends}</p>
+      `;
+
+      document.getElementById('summary').innerHTML = summary;
+    }
+  </script>
+  
+
+</body>
+</html>
