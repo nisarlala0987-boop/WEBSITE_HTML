@@ -1,0 +1,94 @@
+td{
+    border:2px solid black;
+    width: 40px;
+    height: 40px;
+
+}
+#container{
+border: 2px ;
+width: 800px;
+margin: 100px auto ;
+justify-content: center;
+display: flex;
+text-align: center;
+color: white;
+
+
+}
+#thirdRow{
+    empty-cells: hide;
+    text-align: center;
+}
+#secondrow{
+empty-cells: hide;
+}
+#fourthrow{
+
+    empty-cells: hide;
+}
+#container1{
+    border: 2px ;
+width: 800px;
+margin: 20px auto ;
+justify-content: center;
+display: flex;
+text-align: center;
+
+}
+#firstrow{
+empty-cells: hide;
+margin: 20;
+}
+#div1{
+    border-style: none;
+}
+#numbers{
+border: none;
+
+
+}
+#container table td{
+    text-transform: capitalize;
+    }
+.yellow{ 
+    background-color: rgb(230, 230, 28);
+}
+.small{
+font-size: x-small;
+background-color: red;
+}
+.green{
+    background-color: green;
+}
+.right{
+    text-align: right;
+    color: black;
+}
+.close{
+    vertical-align: bottom;
+    color: black;
+    
+}
+.orange{
+    background-color:#F5A623;
+}
+.blue{
+    background-color: blue;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.red{ background-color:red ;
+}
+.purple{
+    background-color:blueviolet;
+}
+.lightblue{
+    background-color: lightskyblue;
+}
+.grey{
+    background-color: gainsboro;
+}
+.black{
+    background-color: black;
+}
