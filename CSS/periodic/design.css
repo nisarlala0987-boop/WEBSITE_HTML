@@ -445,13 +445,13 @@ border-top-right-radius: 10px;
 
 }
 .pull{
-height: 500px;
+height: 400px;
 width: 100%;
 display: flex;
-gap: 100px;
-justify-content: space-around;
+gap: 50px;
+justify-content: space-between;
 
-margin-top: 100px;
+margin-top: 50px;
 }
 .parag{
 font-size: small;
